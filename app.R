@@ -1,6 +1,6 @@
 library(shiny)
-# library(shiny.leptos.showcase)
-devtools::load_all()
+library(shiny.leptos.showcase)
+# devtools::load_all()
 library(bslib)
 
 ui <- page_fluid(
