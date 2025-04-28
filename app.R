@@ -47,6 +47,7 @@ ui <- page_fluid(
     column(
       4,
       wellPanel(
+        h3("Group Buttons Input"),
         shiny_leptos_checkbox_group_buttons(
           "checkGroup",
           value = "option_1",
@@ -64,7 +65,10 @@ ui <- page_fluid(
           href = ""
         )
       )
-    ),
+    )
+  ),
+  br(),
+  fluidRow(
 
     column(
       4,
@@ -77,7 +81,35 @@ ui <- page_fluid(
         ),
         hr(),
         p("Current Value:", style = "color:#888888;"),
-        verbatimTextOutput("dynamicListOut")
+        verbatimTextOutput("dynamicListOut"),
+        a(
+          "See Code",
+          class = "btn btn-primary btn-md",
+          href = ""
+        )
+      )
+
+    ),
+
+    column(
+      4,
+      wellPanel(
+        h3("Color Picker Input"),
+        shiny_leptos_color_picker_input(
+          "colorPicker",
+          label = "Select Color:",
+          value = "#e66465", # A nice default coral color
+          width = "100px"    # Color pickers are usually small
+        ),
+        hr(),
+        p("Current Value:", style = "color:#888888;"),
+        verbatimTextOutput("colorPickerOut"),
+        a(
+          "See Code",
+          class = "btn btn-primary btn-md",
+          style="margin-top: 15px;",
+          href = "" # Link to code if available
+        )
       )
     )
   )
@@ -99,6 +131,11 @@ server <- function(input, output, session) {
   output$dynamicListOut <- renderPrint({
     input$dynamicList
   })
+
+  output$colorPickerOut <- renderPrint({
+    input$colorPicker
+  })
+
 }
 
 shinyApp(ui = ui, server = server)
