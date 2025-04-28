@@ -20,7 +20,7 @@ ui <- page_fluid(
         a(
           "See Code",
           class = "btn btn-primary btn-md",
-          href = ""
+          href = "https://github.com/ixpantia/shiny.leptos.showcase/blob/main/srcrs/src/shiny_leptos_counter_input.rs"
         )
       )
     ),
@@ -39,7 +39,7 @@ ui <- page_fluid(
         a(
           "See Code",
           class = "btn btn-primary btn-md",
-          href = ""
+          href = "https://github.com/ixpantia/shiny.leptos.showcase/blob/main/srcrs/src/shiny_leptos_text_input.rs"
         )
       )
     ),
@@ -62,7 +62,7 @@ ui <- page_fluid(
         a(
           "See Code",
           class = "btn btn-primary btn-md",
-          href = ""
+          href = "https://github.com/ixpantia/shiny.leptos.showcase/blob/main/srcrs/src/shiny_leptos_checkbox_group_buttons.rs"
         )
       )
     )
@@ -85,7 +85,7 @@ ui <- page_fluid(
         a(
           "See Code",
           class = "btn btn-primary btn-md",
-          href = ""
+          href = "https://github.com/ixpantia/shiny.leptos.showcase/blob/main/srcrs/src/shiny_leptos_dynamic_items_input.rs"
         )
       )
 
@@ -108,7 +108,7 @@ ui <- page_fluid(
           "See Code",
           class = "btn btn-primary btn-md",
           style="margin-top: 15px;",
-          href = "" # Link to code if available
+          href = "https://github.com/ixpantia/shiny.leptos.showcase/blob/main/srcrs/src/shiny_leptos_color_picker_input.rs" # Link to code if available
         )
       )
     )
